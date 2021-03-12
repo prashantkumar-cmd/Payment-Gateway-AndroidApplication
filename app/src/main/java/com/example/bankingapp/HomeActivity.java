@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity implements PaymentResultList
               checkout.setImage(R.drawable.preview);
               JSONObject object=new JSONObject();
               try {
-                  object.put("name","Spark Foundation");
+                  object.put("name","Prashant");
 
                   object.put("description","Test Payment");
 
