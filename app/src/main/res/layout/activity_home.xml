@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:text="Checkout"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#EBECF0">
+
+        <ImageView
+            android:id="@+id/watch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/img2" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/watch"
+            android:text="Noise Colorfit Pro 2 Smart Watch(Black )"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/watch"
+            android:text=" Item price :"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/detail"
+
+            android:layout_alignParentRight="true"
+            android:text="+2450.0 "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/text1"
+            android:text=" Delivery charge :"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/amountDel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/amount"
+            android:layout_alignParentRight="true"
+            android:text="+50.0 "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/text2"
+            android:text=" Total Amount (in rupee):"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/amountDel"
+            android:layout_alignParentRight="true"
+            android:text="2500.0 "
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/paybtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorblue"
+        android:textColor="@color/colorwhite"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Pay Now"
+        android:layout_gravity="end" />
+
+
+</LinearLayout>
